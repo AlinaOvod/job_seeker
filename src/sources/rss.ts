@@ -6,6 +6,13 @@ const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: "@_",
   textNodeName: "#text",
+  // Описи у стрічках містять екранований HTML: у Djinni це ~20 000 сутностей на документ,
+  // а стандартний ліміт бібліотеки 1000. Ліміти лишаються скінченними, бо дані сторонні.
+  processEntities: {
+    enabled: true,
+    maxTotalExpansions: 500_000,
+    maxExpandedLength: 20_000_000,
+  },
 });
 
 const asArray = <T>(x: T | T[] | undefined | null): T[] =>

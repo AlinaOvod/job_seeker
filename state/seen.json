@@ -251,7 +251,10 @@
   "baselined": [
     "SoftServe",
     "Ajax Systems",
-    "TG: Don't Panic Junior IT Jobs"
+    "TG: Don't Panic Junior IT Jobs",
+    "Djinni",
+    "DOU Front End",
+    "DOU Node.js"
   ],
   "failures": {
     "Djinni": 1,

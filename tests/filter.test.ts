@@ -70,6 +70,14 @@ test("надто стара вакансія відсікається", () => {
   assert.equal(matchVacancy(vac({ publishedAt: undefined }), filters, { requireLocation: true }, now).ok, true);
 });
 
+test("parseFeed: стрічка з тисячами екранованих сутностей не падає", () => {
+  const description = "&lt;p&gt;Remote &amp;amp; flexible&lt;/p&gt;".repeat(100);
+  const item = (i: number) =>
+    `<item><title>Dev ${i}</title><link>https://jobs.example.com/v/${i}/</link><description>${description}</description></item>`;
+  const xml = `<rss version="2.0"><channel>${Array.from({ length: 100 }, (_, i) => item(i)).join("")}</channel></rss>`;
+  assert.equal(parseFeed(xml, "s").length, 100);
+});
+
 test("parseFeed: RSS 2.0", () => {
   const xml = `<?xml version="1.0"?>
   <rss version="2.0"><channel><title>x</title>
