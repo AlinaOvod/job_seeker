@@ -1,0 +1,144 @@
+{
+  "filters": {
+    "includeTitle": [
+      "full stack",
+      "full-stack",
+      "fullstack",
+      "frontend",
+      "front-end",
+      "front end",
+      "react",
+      "next.js",
+      "nextjs",
+      "node.js",
+      "nodejs",
+      "typescript"
+    ],
+    "excludeTitle": [
+      "senior",
+      "lead",
+      "principal",
+      "staff",
+      "architect",
+      "head of",
+      "manager",
+      "angular",
+      "php",
+      "java",
+      ".net",
+      "python",
+      "react native",
+      "mobile",
+      "ios",
+      "android",
+      "qa",
+      "devops"
+    ],
+    "excludeText": [],
+    "locations": [
+      "remote",
+      "віддалено",
+      "удаленно",
+      "kyiv",
+      "kiev",
+      "київ"
+    ],
+    "maxAgeHours": 72
+  },
+  "sources": [
+    {
+      "type": "rss",
+      "name": "Djinni",
+      "url": "https://djinni.co/jobs/rss/?",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "rss",
+      "name": "DOU Front End",
+      "url": "https://jobs.dou.ua/vacancies/feeds/?category=Front%20End",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "rss",
+      "name": "DOU Node.js",
+      "url": "https://jobs.dou.ua/vacancies/feeds/?category=Node.js",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "html",
+      "name": "SoftServe",
+      "urls": ["https://career.softserveinc.com/en-us/vacancies"],
+      "linkPattern": "career\\.softserveinc\\.com/en-us/vacancies/[^\"?#/]*?-(\\d+)(?![\\w-])",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "Ajax Systems",
+      "provider": "lever",
+      "board": "ajax",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "email",
+      "name": "Пошта",
+      "mailbox": "INBOX",
+      "lookbackDays": 2,
+      "filterMode": "excludesOnly",
+      "requireLocation": false,
+      "enabled": false,
+      "rules": [
+        {
+          "name": "LinkedIn",
+          "fromContains": "linkedin.com",
+          "linkPattern": "linkedin\\.com/(?:comm/)?jobs/view/(\\d+)",
+          "urlTemplate": "https://www.linkedin.com/jobs/view/{id}/"
+        },
+        {
+          "name": "Djinni",
+          "fromContains": "djinni.co",
+          "linkPattern": "djinni\\.co/jobs/(\\d+)-"
+        },
+        {
+          "name": "Work.ua",
+          "fromContains": "work.ua",
+          "linkPattern": "work\\.ua/(?:[a-z]{2}/)?jobs/(\\d+)",
+          "urlTemplate": "https://www.work.ua/jobs/{id}/"
+        },
+        {
+          "name": "Robota.ua",
+          "fromContains": "robota.ua",
+          "linkPattern": "robota\\.ua/(?:[a-z]{2}/)?company\\d+/vacancy(\\d+)"
+        },
+        {
+          "name": "jobs.ua",
+          "fromContains": "jobs.ua",
+          "linkPattern": "jobs\\.ua/job-[^/?#\"]*?-(\\d+)"
+        },
+        {
+          "name": "DOU",
+          "fromContains": "dou.ua",
+          "linkPattern": "jobs\\.dou\\.ua/companies/[^/]+/vacancies/(\\d+)"
+        }
+      ]
+    },
+    {
+      "type": "telegram",
+      "name": "TG: Don't Panic Junior IT Jobs",
+      "channel": "Job_IT_Junior",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "telegram",
+      "name": "Приклад каналу",
+      "channel": "назва_публічного_каналу",
+      "requireLocation": false,
+      "enabled": false
+    }
+  ]
+}

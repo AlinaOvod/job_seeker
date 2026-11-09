@@ -1,0 +1,51 @@
+name: Check vacancies
+
+on:
+  schedule:
+    # Кожні 15 хвилин. GitHub може запускати із запізненням на кілька хвилин.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Щоб два запуски не писали стан одночасно
+concurrency:
+  group: job-alert-bot
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run bot
+        run: npm start
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Потрібні лише якщо ввімкнено джерело "email" у config.json
+          IMAP_USER: ${{ secrets.IMAP_USER }}
+          IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
+          IMAP_HOST: ${{ secrets.IMAP_HOST }}
+
+      - name: Save state
+        run: |
+          git config user.name "job-alert-bot"
+          git config user.email "job-alert-bot@users.noreply.github.com"
+          git add state/seen.json
+          if git diff --cached --quiet; then
+            echo "Стан не змінився"
+          else
+            git commit -m "chore: update seen vacancies"
+            git push
+          fi
