@@ -35,14 +35,7 @@
       "devops"
     ],
     "excludeText": [],
-    "locations": [
-      "remote",
-      "віддалено",
-      "удаленно",
-      "kyiv",
-      "kiev",
-      "київ"
-    ],
+    "locations": ["remote", "віддалено", "удаленно", "kyiv", "kiev", "київ"],
     "maxAgeHours": 72
   },
   "sources": [
@@ -139,6 +132,37 @@
       "channel": "назва_публічного_каналу",
       "requireLocation": false,
       "enabled": false
+    },
+    {
+      "type": "ats",
+      "name": "uni.tech",
+      "provider": "ashby",
+      "board": "universe",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "rss",
+      "name": "Upstars",
+      "url": "https://career.upstars.com/jobs.rss",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "html",
+      "name": "YouScan",
+      "urls": ["https://youscan.peopleforce.io/careers?locale=uk"],
+      "linkPattern": "youscan\\.peopleforce\\.io/careers/v/(\\d+)-",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "BetterMe",
+      "provider": "breezy",
+      "board": "betterme",
+      "requireLocation": true,
+      "enabled": true
     }
   ]
 }

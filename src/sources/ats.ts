@@ -106,6 +106,25 @@ export function mapSmartRecruiters(json: any, source: string, board: string): Va
     });
 }
 
+/** Breezy HR: GET {board}.breezy.hr/json */
+export function mapBreezy(json: any, source: string): Vacancy[] {
+  return (Array.isArray(json) ? json : [])
+    .filter((j: any) => j?.name && j?.url)
+    .map((j: any): Vacancy => {
+      const l = j.location ?? {};
+      const remote = l.is_remote ? "Remote" : "";
+      return {
+        id: String(j.id ?? j.url),
+        title: String(j.name).trim(),
+        url: j.url,
+        text: compact(l.name, remote, j.department).join("\n"),
+        details: compact(l.name, remote).join(" · ") || undefined,
+        publishedAt: toDate(j.published_date),
+        source,
+      };
+    });
+}
+
 export function atsUrl(provider: AtsProvider, board: string): string {
   const b = encodeURIComponent(board);
   switch (provider) {
@@ -119,6 +138,8 @@ export function atsUrl(provider: AtsProvider, board: string): string {
       return `https://apply.workable.com/api/v1/widget/accounts/${b}?details=true`;
     case "smartrecruiters":
       return `https://api.smartrecruiters.com/v1/companies/${b}/postings?limit=100`;
+    case "breezy":
+      return `https://${b}.breezy.hr/json`;
   }
 }
 
@@ -138,5 +159,7 @@ export async function fetchAts(src: SourceConfig): Promise<Vacancy[]> {
       return mapWorkable(json, src.name);
     case "smartrecruiters":
       return mapSmartRecruiters(json, src.name, src.board);
+    case "breezy":
+      return mapBreezy(json, src.name);
   }
 }

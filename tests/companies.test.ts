@@ -4,6 +4,7 @@ import { detectAts } from "../src/detect.js";
 import {
   atsUrl,
   mapAshby,
+  mapBreezy,
   mapGreenhouse,
   mapLever,
   mapSmartRecruiters,
@@ -86,6 +87,33 @@ test("Workable і SmartRecruiters", () => {
   );
   assert.equal(s[0].url, "https://jobs.smartrecruiters.com/CompanyInc/743999");
   assert.equal(s[0].details, "Kyiv, UA · Remote");
+});
+
+test("Breezy: назва без шаблонів, локація і Remote в тексті, детектор знаходить компанію", () => {
+  const items = mapBreezy(
+    [
+      {
+        id: "c3caf5f989a5",
+        name: " Frontend Developer ",
+        url: "https://acme.breezy.hr/p/c3caf5f989a5-frontend-developer",
+        published_date: "2026-10-20T11:24:48.105Z",
+        location: { name: "Ukraine", is_remote: true },
+        department: "Web",
+      },
+      { id: "no-url", name: "Без посилання" },
+    ],
+    "Acme",
+  );
+  assert.equal(items.length, 1);
+  assert.equal(items[0].title, "Frontend Developer");
+  assert.equal(items[0].details, "Ukraine · Remote");
+  assert.match(items[0].text, /Remote/);
+  assert.ok(items[0].publishedAt instanceof Date);
+  assert.deepEqual(mapBreezy({ error: "x" }, "Acme"), []);
+  assert.equal(atsUrl("breezy", "acme"), "https://acme.breezy.hr/json");
+  assert.deepEqual(detectAts('<script src="https://acme.breezy.hr/embed/js"></script>'), [
+    { system: "breezy", board: "acme", supported: true },
+  ]);
 });
 
 test("atsUrl: адреси публічних API", () => {

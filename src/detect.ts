@@ -42,6 +42,12 @@ const MARKERS: Marker[] = [
     re: /(?:jobs|careers)\.smartrecruiters\.com\/([A-Za-z0-9_-]+)/,
     supported: true,
   },
+  {
+    system: "breezy",
+    re: /([a-z0-9-]+)\.breezy\.hr/i,
+    supported: true,
+    ignore: ["www", "app", "api", "assets", "embed"],
+  },
   { system: "workday", re: /([a-z0-9-]+)\.wd\d+\.myworkdayjobs\.com/i, supported: false },
   { system: "personio", re: /([a-z0-9-]+)\.jobs\.personio\.(?:de|com)/i, supported: false },
   { system: "teamtailor", re: /([a-z0-9-]+)\.teamtailor\.com/i, supported: false },
@@ -73,4 +79,4 @@ export function detectAts(html: string): Detection[] {
 }
 
 export const isAtsProvider = (s: string): s is AtsProvider =>
-  ["greenhouse", "lever", "ashby", "workable", "smartrecruiters"].includes(s);
+  ["greenhouse", "lever", "ashby", "workable", "smartrecruiters", "breezy"].includes(s);
