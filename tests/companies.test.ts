@@ -7,6 +7,7 @@ import {
   mapBreezy,
   mapGreenhouse,
   mapLever,
+  mapRecruitee,
   mapSmartRecruiters,
   mapWorkable,
 } from "../src/sources/ats.js";
@@ -113,6 +114,34 @@ test("Breezy: назва без шаблонів, локація і Remote в т
   assert.equal(atsUrl("breezy", "acme"), "https://acme.breezy.hr/json");
   assert.deepEqual(detectAts('<script src="https://acme.breezy.hr/embed/js"></script>'), [
     { system: "breezy", board: "acme", supported: true },
+  ]);
+});
+
+test("Recruitee: дата з суфіксом UTC, лише опубліковані, детектор знаходить компанію", () => {
+  const items = mapRecruitee(
+    {
+      offers: [
+        {
+          id: 1,
+          title: "Full Stack Engineer",
+          careers_url: "https://acme.recruitee.com/o/full-stack-engineer-1",
+          published_at: "2026-11-04 10:54:29 UTC",
+          location: "Remote job",
+          remote: true,
+          department: "Engineering",
+        },
+        { id: 2, title: "Чернетка", careers_url: "https://acme.recruitee.com/o/draft", status: "draft" },
+      ],
+    },
+    "Acme",
+  );
+  assert.equal(items.length, 1);
+  assert.equal(items[0].publishedAt?.toISOString(), "2026-11-04T10:54:29.000Z");
+  assert.equal(items[0].details, "Remote job · Remote");
+  assert.match(items[0].text, /Remote/);
+  assert.equal(atsUrl("recruitee", "acme"), "https://acme.recruitee.com/api/offers/");
+  assert.deepEqual(detectAts('<a href="https://acme.recruitee.com/o/dev">Apply</a>'), [
+    { system: "recruitee", board: "acme", supported: true },
   ]);
 });
 

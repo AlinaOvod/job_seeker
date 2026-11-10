@@ -125,6 +125,27 @@ export function mapBreezy(json: any, source: string): Vacancy[] {
     });
 }
 
+/** Recruitee: GET {board}.recruitee.com/api/offers/ */
+export function mapRecruitee(json: any, source: string): Vacancy[] {
+  return (json?.offers ?? [])
+    .filter((j: any) => j?.title && j?.careers_url && (j.status ?? "published") === "published")
+    .map((j: any): Vacancy => {
+      const place = compact(j.city, j.country).join(", ") || j.location;
+      const remote = j.remote ? "Remote" : "";
+      // Дата приходить як "2026-11-04 10:54:29 UTC": переводимо в ISO, щоб не залежати від парсера дат
+      const published = String(j.published_at ?? j.created_at ?? "").replace(" ", "T").replace(/ UTC$/, "Z");
+      return {
+        id: String(j.id ?? j.careers_url),
+        title: String(j.title).trim(),
+        url: j.careers_url,
+        text: compact(place, remote, j.department).join("\n"),
+        details: compact(place, remote).join(" · ") || undefined,
+        publishedAt: toDate(published),
+        source,
+      };
+    });
+}
+
 export function atsUrl(provider: AtsProvider, board: string): string {
   const b = encodeURIComponent(board);
   switch (provider) {
@@ -140,6 +161,8 @@ export function atsUrl(provider: AtsProvider, board: string): string {
       return `https://api.smartrecruiters.com/v1/companies/${b}/postings?limit=100`;
     case "breezy":
       return `https://${b}.breezy.hr/json`;
+    case "recruitee":
+      return `https://${b}.recruitee.com/api/offers/`;
   }
 }
 
@@ -161,5 +184,7 @@ export async function fetchAts(src: SourceConfig): Promise<Vacancy[]> {
       return mapSmartRecruiters(json, src.name, src.board);
     case "breezy":
       return mapBreezy(json, src.name);
+    case "recruitee":
+      return mapRecruitee(json, src.name);
   }
 }

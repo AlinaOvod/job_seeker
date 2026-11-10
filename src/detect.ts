@@ -51,7 +51,12 @@ const MARKERS: Marker[] = [
   { system: "workday", re: /([a-z0-9-]+)\.wd\d+\.myworkdayjobs\.com/i, supported: false },
   { system: "personio", re: /([a-z0-9-]+)\.jobs\.personio\.(?:de|com)/i, supported: false },
   { system: "teamtailor", re: /([a-z0-9-]+)\.teamtailor\.com/i, supported: false },
-  { system: "recruitee", re: /([a-z0-9-]+)\.recruitee\.com/i, supported: false },
+  {
+    system: "recruitee",
+    re: /([a-z0-9-]+)\.recruitee\.com/i,
+    supported: true,
+    ignore: ["www", "app", "api", "assets", "careers"],
+  },
   { system: "bamboohr", re: /([a-z0-9-]+)\.bamboohr\.com\/(?:jobs|careers)/i, supported: false },
   { system: "comeet", re: /comeet\.(?:co|com)\/jobs\/([a-z0-9-]+)/i, supported: false },
   { system: "icims", re: /([a-z0-9-]+)\.icims\.com/i, supported: false },
@@ -79,4 +84,4 @@ export function detectAts(html: string): Detection[] {
 }
 
 export const isAtsProvider = (s: string): s is AtsProvider =>
-  ["greenhouse", "lever", "ashby", "workable", "smartrecruiters", "breezy"].includes(s);
+  ["greenhouse", "lever", "ashby", "workable", "smartrecruiters", "breezy", "recruitee"].includes(s);

@@ -12,7 +12,8 @@
       "nextjs",
       "node.js",
       "nodejs",
-      "typescript"
+      "typescript",
+      "javascript"
     ],
     "excludeTitle": [
       "senior",
@@ -58,14 +59,6 @@
       "name": "DOU Node.js",
       "url": "https://jobs.dou.ua/vacancies/feeds/?category=Node.js",
       "requireLocation": true,
-      "enabled": true
-    },
-    {
-      "type": "html",
-      "name": "SoftServe",
-      "urls": ["https://career.softserveinc.com/en-us/vacancies"],
-      "linkPattern": "career\\.softserveinc\\.com/en-us/vacancies/[^\"?#/]*?-(\\d+)(?![\\w-])",
-      "requireLocation": false,
       "enabled": true
     },
     {
@@ -161,6 +154,14 @@
       "name": "BetterMe",
       "provider": "breezy",
       "board": "betterme",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "Namecheap",
+      "provider": "recruitee",
+      "board": "namecheap",
       "requireLocation": true,
       "enabled": true
     }

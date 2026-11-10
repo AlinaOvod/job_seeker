@@ -27,7 +27,7 @@ export interface EmailRule {
   urlTemplate?: string;
 }
 
-export type AtsProvider = "greenhouse" | "lever" | "ashby" | "workable" | "smartrecruiters" | "breezy";
+export type AtsProvider = "greenhouse" | "lever" | "ashby" | "workable" | "smartrecruiters" | "breezy" | "recruitee";
 
 export interface SourceConfig {
   type: "rss" | "telegram" | "email" | "ats" | "html";
