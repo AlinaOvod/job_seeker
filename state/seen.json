@@ -1018,7 +1018,19 @@
     "url:https://djinni.co/jobs/849261-middle-qa-engineer-to-broadband-devices-netwo",
     "url:https://djinni.co/jobs/853644-bmc-discovery-knowledge-developer-trainee-irc",
     "url:https://djinni.co/jobs/857496-media-buyer-facebook",
-    "url:https://djinni.co/jobs/857495-embedded-engineer"
+    "url:https://djinni.co/jobs/857495-embedded-engineer",
+    "url:https://namecheap.recruitee.com/o/full-stack-engineer-1",
+    "url:https://namecheap.recruitee.com/o/payment-administrator",
+    "url:https://namecheap.recruitee.com/o/senior-data-analyst",
+    "url:https://namecheap.recruitee.com/o/vp-incubation-hub",
+    "url:https://namecheap.recruitee.com/o/financial-controller-3",
+    "url:https://djinni.co/jobs/857508-seo-specialist",
+    "url:https://djinni.co/jobs/857507-project-manager-it",
+    "url:https://djinni.co/jobs/857506-crm-manager",
+    "url:https://djinni.co/jobs/857505-senior-data-engineer",
+    "url:https://djinni.co/jobs/857504-games-account-manager",
+    "url:https://djinni.co/jobs/857502-ppc-specialist-senior-hs-48815",
+    "url:https://djinni.co/jobs/857500-designer"
   ],
   "baselined": [
     "SoftServe",
@@ -1030,7 +1042,8 @@
     "uni.tech",
     "Upstars",
     "YouScan",
-    "BetterMe"
+    "BetterMe",
+    "Namecheap"
   ],
   "failures": {
     "Djinni": 0,
@@ -1042,6 +1055,7 @@
     "uni.tech": 0,
     "Upstars": 0,
     "YouScan": 0,
-    "BetterMe": 0
+    "BetterMe": 0,
+    "Namecheap": 0
   }
 }
