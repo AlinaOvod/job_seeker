@@ -1196,7 +1196,11 @@
     "url:https://djinni.co/jobs/857595-middle-raf-sports-operations-specialist",
     "url:https://djinni.co/jobs/807980-junior-game-designer",
     "url:https://djinni.co/jobs/857593-senior-casino-product-manager-b2c-igaming",
-    "url:https://djinni.co/jobs/857584-intern-customer-success-manager"
+    "url:https://djinni.co/jobs/857584-intern-customer-success-manager",
+    "url:https://djinni.co/jobs/852982-l2-support-engineer",
+    "url:https://djinni.co/jobs/857596-senior-artificial-intelligence-specialist",
+    "url:https://djinni.co/jobs/626002-trainee-junior-manual-qa-engineer",
+    "url:https://djinni.co/jobs/458789-paid-social-media-specialist"
   ],
   "baselined": [
     "SoftServe",
@@ -1216,7 +1220,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
