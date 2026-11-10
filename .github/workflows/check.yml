@@ -21,6 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Запуск, що чекав у черзі, міг отримати код до коміту попереднього запуску: беремо свіжий стан
+      - name: Pull latest state
+        run: git pull --ff-only origin main
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
