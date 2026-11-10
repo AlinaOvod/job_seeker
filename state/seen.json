@@ -791,7 +791,10 @@
     "url:https://jobs.dou.ua/companies/ews-army/vacancies/360774",
     "tg:Job_IT_Junior/10762",
     "url:https://jobs.dou.ua/companies/holy-water/vacancies/379390",
-    "url:https://djinni.co/jobs/857327-middle-full-stack-developer"
+    "url:https://djinni.co/jobs/857327-middle-full-stack-developer",
+    "url:https://djinni.co/jobs/857408-product-analyst",
+    "url:https://djinni.co/jobs/852283-customer-retention-manager-partnership-projec",
+    "url:https://djinni.co/jobs/826130-chief-marketing-officer"
   ],
   "baselined": [
     "SoftServe",
@@ -809,7 +812,7 @@
     "Djinni": 0,
     "DOU Front End": 0,
     "DOU Node.js": 0,
-    "SoftServe": 3,
+    "SoftServe": 4,
     "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
