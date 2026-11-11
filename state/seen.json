@@ -1242,7 +1242,10 @@
     "url:https://dou.ua/calendar/58639",
     "url:https://dou.ua/calendar/58699",
     "url:https://dou.ua/calendar/58719",
-    "url:https://djinni.co/jobs/852551-security-system-engineer"
+    "url:https://djinni.co/jobs/852551-security-system-engineer",
+    "url:https://djinni.co/jobs/857617-marketing-content-writer",
+    "url:https://djinni.co/jobs/850898-business-operations-manager",
+    "url:https://djinni.co/jobs/829399-senior-product-data-analyst"
   ],
   "baselined": [
     "SoftServe",
@@ -1262,7 +1265,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
