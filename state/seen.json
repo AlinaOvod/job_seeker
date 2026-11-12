@@ -1663,7 +1663,8 @@
     "url:https://djinni.co/jobs/857210-mechatronics-r-and-d-engineer-inzhener-z-rozr",
     "url:https://djinni.co/jobs/795528-senior-devops-engineer-sde",
     "url:https://djinni.co/jobs/857823-chief-financial-officer",
-    "url:https://djinni.co/jobs/857824-team-lead-of-media-buying-facebook-gambling"
+    "url:https://djinni.co/jobs/857824-team-lead-of-media-buying-facebook-gambling",
+    "url:https://djinni.co/jobs/757118-customer-support-agent-night-shifts"
   ],
   "baselined": [
     "SoftServe",
@@ -1683,7 +1684,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 1,
+    "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
