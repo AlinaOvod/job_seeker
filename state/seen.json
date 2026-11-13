@@ -2124,7 +2124,14 @@
     "url:https://djinni.co/jobs/858032-finance-reporting-lead",
     "url:https://djinni.co/jobs/858033-computer-vision-engineer-robotics-perception",
     "url:https://djinni.co/jobs/858031-aso-specialist-igaming",
-    "url:https://djinni.co/jobs/857014-hr-administrator"
+    "url:https://djinni.co/jobs/857014-hr-administrator",
+    "url:https://djinni.co/jobs/850551-tiktok-media-buying-team-lead",
+    "url:https://djinni.co/jobs/852881-lead-net-engineer-5830",
+    "url:https://djinni.co/jobs/856135-engineering-manager-mobile-web",
+    "url:https://djinni.co/jobs/858037-senior-api-integration-lead-integration-archi",
+    "url:https://djinni.co/jobs/858036-facebook-media-buyer",
+    "url:https://djinni.co/jobs/858035-customer-support-specialist-payment-manager-s",
+    "url:https://djinni.co/jobs/858034-customer-support-specialist-payment-manager-s"
   ],
   "baselined": [
     "SoftServe",
@@ -2144,7 +2151,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
