@@ -7,6 +7,7 @@ import {
   mapBreezy,
   mapGreenhouse,
   mapLever,
+  mapOracle,
   mapRecruitee,
   mapSmartRecruiters,
   mapWorkable,
@@ -143,6 +144,32 @@ test("Recruitee: дата з суфіксом UTC, лише опублікова
   assert.deepEqual(detectAts('<a href="https://acme.recruitee.com/o/dev">Apply</a>'), [
     { system: "recruitee", board: "acme", supported: true },
   ]);
+});
+
+test("Oracle Recruiting: посилання на вакансію, дата, некоректний board", () => {
+  const board = "acme.fa.ocs.oraclecloud.com/CX_1001";
+  const items = mapOracle(
+    {
+      items: [
+        {
+          requisitionList: [
+            { Id: "5164", Title: " Frontend Engineer ", PostedDate: "2026-11-16", PrimaryLocation: "Ukraine", WorkplaceType: "Remote" },
+            { Id: "1" },
+          ],
+        },
+      ],
+    },
+    "Acme",
+    board,
+  );
+  assert.equal(items.length, 1);
+  assert.equal(items[0].title, "Frontend Engineer");
+  assert.equal(items[0].url, "https://acme.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/5164");
+  assert.equal(items[0].details, "Ukraine · Remote");
+  assert.ok(items[0].publishedAt instanceof Date);
+  assert.deepEqual(mapOracle({}, "Acme", board), []);
+  assert.match(atsUrl("oracle", board), /^https:\/\/acme\.fa\.ocs\.oraclecloud\.com\/hcmRestApi\/.*siteNumber=CX_1001,/);
+  assert.throws(() => atsUrl("oracle", "evil.example.com/CX_1"));
 });
 
 test("atsUrl: адреси публічних API", () => {

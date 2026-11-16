@@ -164,6 +164,60 @@
       "board": "namecheap",
       "requireLocation": true,
       "enabled": true
+    },
+    {
+      "type": "html",
+      "name": "NIX",
+      "urls": ["https://www.nixsolutions.com/ua/cooperation/vacancies/"],
+      "linkPattern": "nixsolutions\\.com/ua/cooperation/vacancies/([a-z0-9-]+)/?(?:[?#]|$)",
+      "requireLocation": false,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "Wix",
+      "provider": "smartrecruiters",
+      "board": "Wix2",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "html",
+      "name": "GlobalLogic",
+      "urls": [
+        "https://www.globallogic.com/ua/career-search-page/?keywords=react",
+        "https://www.globallogic.com/ua/career-search-page/?keywords=frontend",
+        "https://www.globallogic.com/ua/career-search-page/?keywords=javascript",
+        "https://www.globallogic.com/ua/career-search-page/?keywords=node",
+        "https://www.globallogic.com/ua/career-search-page/?keywords=full+stack"
+      ],
+      "linkPattern": "globallogic\\.com/ua/careers/[a-z0-9-]*?-irc(\\d+)",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "Boosta",
+      "provider": "greenhouse",
+      "board": "boosta",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "Gen.Tech",
+      "provider": "breezy",
+      "board": "gen-tech",
+      "requireLocation": true,
+      "enabled": true
+    },
+    {
+      "type": "ats",
+      "name": "Ciklum",
+      "provider": "oracle",
+      "board": "ialmme.fa.ocs.oraclecloud.com/CX_1001",
+      "requireLocation": true,
+      "enabled": true
     }
   ]
 }

@@ -84,4 +84,4 @@ export function detectAts(html: string): Detection[] {
 }
 
 export const isAtsProvider = (s: string): s is AtsProvider =>
-  ["greenhouse", "lever", "ashby", "workable", "smartrecruiters", "breezy", "recruitee"].includes(s);
+  ["greenhouse", "lever", "ashby", "workable", "smartrecruiters", "breezy", "recruitee", "oracle"].includes(s);

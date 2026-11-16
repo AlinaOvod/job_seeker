@@ -146,7 +146,40 @@ export function mapRecruitee(json: any, source: string): Vacancy[] {
     });
 }
 
+/** Oracle Recruiting Cloud: board має вигляд "{host}.oraclecloud.com/{siteNumber}", напр. "ialmme.fa.ocs.oraclecloud.com/CX_1001" */
+function parseOracleBoard(board: string): { host: string; site: string } {
+  const m = /^([a-z0-9.-]+\.oraclecloud\.com)\/([A-Za-z0-9_]+)$/.exec(board.trim());
+  if (!m) throw new Error(`Для oracle board має бути "хост.oraclecloud.com/CX_123", отримано "${board}"`);
+  return { host: m[1], site: m[2] };
+}
+
+export function mapOracle(json: any, source: string, board: string): Vacancy[] {
+  const { host, site } = parseOracleBoard(board);
+  return (json?.items?.[0]?.requisitionList ?? [])
+    .filter((j: any) => j?.Id && j?.Title)
+    .map((j: any): Vacancy => {
+      const place = j.PrimaryLocation;
+      return {
+        id: String(j.Id),
+        title: String(j.Title).trim(),
+        url: `https://${host}/hcmUI/CandidateExperience/en/sites/${site}/job/${j.Id}`,
+        text: compact(place, j.WorkplaceType, j.JobFamily).join("\n"),
+        details: compact(place, j.WorkplaceType).join(" · ") || undefined,
+        publishedAt: toDate(j.PostedDate),
+        source,
+      };
+    });
+}
+
 export function atsUrl(provider: AtsProvider, board: string): string {
+  if (provider === "oracle") {
+    // 25 найновіших: між запусками стільки нових вакансій не з'являється
+    const { host, site } = parseOracleBoard(board);
+    return (
+      `https://${host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions` +
+      `?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=${site},limit=25,sortBy=POSTING_DATES_DESC`
+    );
+  }
   const b = encodeURIComponent(board);
   switch (provider) {
     case "greenhouse":
@@ -186,5 +219,7 @@ export async function fetchAts(src: SourceConfig): Promise<Vacancy[]> {
       return mapBreezy(json, src.name);
     case "recruitee":
       return mapRecruitee(json, src.name);
+    case "oracle":
+      return mapOracle(json, src.name, src.board);
   }
 }
