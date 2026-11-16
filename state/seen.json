@@ -3317,7 +3317,9 @@
     "url:https://djinni.co/jobs/849360-product-manager-game-design-lead",
     "url:https://djinni.co/jobs/849396-game-designer",
     "url:https://djinni.co/jobs/858408-trainee-junior-frontend-engineer",
-    "url:https://djinni.co/jobs/858409-trainee-junior-frontend-engineer"
+    "url:https://djinni.co/jobs/858409-trainee-junior-frontend-engineer",
+    "url:https://djinni.co/jobs/858411-senior-business-development-manager-psp",
+    "url:https://djinni.co/jobs/858410-sales-representative"
   ],
   "baselined": [
     "SoftServe",
@@ -3343,7 +3345,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 1,
+    "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
