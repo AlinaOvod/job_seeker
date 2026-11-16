@@ -3313,7 +3313,11 @@
     "url:https://djinni.co/jobs/843069-lead-generation-team-lead",
     "url:https://djinni.co/jobs/856507-senior-python-mobile-sdk-engineer-attribution",
     "url:https://djinni.co/jobs/858406-new-business-lead-events",
-    "url:https://highload.tech/uk/openai-predstavyla-instrumenty-dlya-poshuku-vrazlyvostej-daybreak-red-team-i-defense-factory"
+    "url:https://highload.tech/uk/openai-predstavyla-instrumenty-dlya-poshuku-vrazlyvostej-daybreak-red-team-i-defense-factory",
+    "url:https://djinni.co/jobs/849360-product-manager-game-design-lead",
+    "url:https://djinni.co/jobs/849396-game-designer",
+    "url:https://djinni.co/jobs/858408-trainee-junior-frontend-engineer",
+    "url:https://djinni.co/jobs/858409-trainee-junior-frontend-engineer"
   ],
   "baselined": [
     "SoftServe",
@@ -3339,7 +3343,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
