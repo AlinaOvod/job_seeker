@@ -2510,7 +2510,10 @@
     "url:https://djinni.co/jobs/858205-sap-authorisation-consultant-pfcg-cua",
     "url:https://jobs.dou.ua/companies/codetiburon/vacancies/379989",
     "url:https://djinni.co/jobs/858206-automation-qa-engineer-java-web-ui-api",
-    "url:https://djinni.co/jobs/858207-automation-qa-engineer-api-cloud"
+    "url:https://djinni.co/jobs/858207-automation-qa-engineer-api-cloud",
+    "url:https://djinni.co/jobs/858209-systems-integration-architect-lead-systems-en",
+    "url:https://djinni.co/jobs/858208-technical-product-architect-technical-product",
+    "url:https://djinni.co/jobs/843753-vip-manager-german-speaking"
   ],
   "baselined": [
     "SoftServe",
@@ -2530,7 +2533,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 1,
+    "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
