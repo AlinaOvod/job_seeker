@@ -3523,7 +3523,14 @@
     "url:https://djinni.co/jobs/858505-senior-windows-endpoint-systems-engineer-c-c-",
     "url:https://djinni.co/jobs/858504-lead-generation-specialist-middle",
     "url:https://djinni.co/jobs/858502-payment-partnerships-manager-business-develop",
-    "url:https://jobs.smartrecruiters.com/wix2/744000162060209"
+    "url:https://jobs.smartrecruiters.com/wix2/744000162060209",
+    "url:https://djinni.co/jobs/858511-middle-manual-qa-engineer",
+    "url:https://djinni.co/jobs/858510-project-manager-business-analyst",
+    "url:https://djinni.co/jobs/825951-junior-support-manager",
+    "url:https://djinni.co/jobs/731075-junior-sales-manager-v-unitalk",
+    "url:https://djinni.co/jobs/737724-trainee-bonus-manager",
+    "url:https://djinni.co/jobs/858509-live-streamer",
+    "url:https://djinni.co/jobs/854973-junior-sourcer-sorser-bez-dosvidu-z-navchanni"
   ],
   "baselined": [
     "SoftServe",
@@ -3558,7 +3565,7 @@
     "Namecheap": 0,
     "NIX": 0,
     "Wix": 0,
-    "GlobalLogic": 0,
+    "GlobalLogic": 1,
     "Boosta": 0,
     "Gen.Tech": 0,
     "Ciklum": 0
