@@ -4139,7 +4139,10 @@
     "url:https://djinni.co/jobs/839089-affilate-manager-affiliate-partnerships-e-com",
     "url:https://djinni.co/jobs/858868-hardware-pcb-design-engineer-altium-designer-",
     "url:https://djinni.co/jobs/856004-embedded-c-c-engineer-stm32",
-    "url:https://djinni.co/jobs/854549-growth-marketing-manager"
+    "url:https://djinni.co/jobs/854549-growth-marketing-manager",
+    "url:https://djinni.co/jobs/848764-head-of-product",
+    "url:https://djinni.co/jobs/858871-data-engineer-databricks-pyspark",
+    "url:https://djinni.co/jobs/839644-middle-seo-specialist"
   ],
   "baselined": [
     "SoftServe",
@@ -4177,6 +4180,6 @@
     "GlobalLogic": 0,
     "Boosta": 0,
     "Gen.Tech": 0,
-    "Ciklum": 1
+    "Ciklum": 0
   }
 }
