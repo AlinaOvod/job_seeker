@@ -4128,7 +4128,8 @@
     "url:https://djinni.co/jobs/858861-middle-data-scientist",
     "url:https://djinni.co/jobs/851165-senior-embedded-engineer-uav",
     "url:https://djinni.co/jobs/858863-rf-engineer",
-    "url:https://djinni.co/jobs/855082-marketing-manager-cloud-and-ai-demand-generat"
+    "url:https://djinni.co/jobs/855082-marketing-manager-cloud-and-ai-demand-generat",
+    "url:https://djinni.co/jobs/858865-hardware-engineer"
   ],
   "baselined": [
     "SoftServe",
@@ -4154,7 +4155,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
