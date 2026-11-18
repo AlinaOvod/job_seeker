@@ -4133,7 +4133,10 @@
     "url:https://djinni.co/jobs/858867-tekhnik-z-iakosti-z-navchanniam",
     "url:https://djinni.co/jobs/858864-senior-scrum-master-agile-delivery-lead",
     "url:https://highload.tech/uk/gpt-6-2-astra-i-sol-openai-vidpovila-claude-cherez-tyzhden",
-    "url:https://djinni.co/jobs/758857-recruiter-affiliate-marketing"
+    "url:https://djinni.co/jobs/758857-recruiter-affiliate-marketing",
+    "url:https://djinni.co/jobs/858870-technical-support-engineer",
+    "url:https://djinni.co/jobs/858869-head-of-support-igaming",
+    "url:https://djinni.co/jobs/839089-affilate-manager-affiliate-partnerships-e-com"
   ],
   "baselined": [
     "SoftServe",
@@ -4159,7 +4162,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
