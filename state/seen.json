@@ -4411,7 +4411,12 @@
     "url:https://djinni.co/jobs/854531-business-development-manager-igaming",
     "url:https://djinni.co/jobs/852995-e-commerce-video-editor",
     "url:https://djinni.co/jobs/859005-junior-apple-search-ads-specialist",
-    "url:https://djinni.co/jobs/858997-system-administrator-it-support-specialist"
+    "url:https://djinni.co/jobs/858997-system-administrator-it-support-specialist",
+    "url:https://djinni.co/jobs/853720-junior-qc-engineer-embedded-firmware",
+    "url:https://djinni.co/jobs/859015-head-of-marketing",
+    "url:https://djinni.co/jobs/852120-customer-support-manager",
+    "url:https://djinni.co/jobs/859013-ai-first-motion-designer",
+    "url:https://djinni.co/jobs/859012-qa-lead-qa-consultant"
   ],
   "baselined": [
     "SoftServe",
@@ -4437,7 +4442,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 3,
+    "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
