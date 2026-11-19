@@ -4402,7 +4402,16 @@
     "url:https://djinni.co/jobs/737555-middle-product-designer",
     "url:https://djinni.co/jobs/839238-lead-monitoring-engineer-scom",
     "url:https://djinni.co/jobs/848892-security-operations-analyst-l1-l2",
-    "url:https://job-boards.eu.greenhouse.io/boosta/jobs/5009840101"
+    "url:https://job-boards.eu.greenhouse.io/boosta/jobs/5009840101",
+    "url:https://djinni.co/jobs/763230-middle-backend-developer-python-django",
+    "url:https://djinni.co/jobs/859010-marketing-lead-e-commerce-dtc",
+    "url:https://djinni.co/jobs/859008-founding-engineer-solution-architect",
+    "url:https://djinni.co/jobs/859007-product-manager",
+    "url:https://djinni.co/jobs/821746-creative-copywriter",
+    "url:https://djinni.co/jobs/854531-business-development-manager-igaming",
+    "url:https://djinni.co/jobs/852995-e-commerce-video-editor",
+    "url:https://djinni.co/jobs/859005-junior-apple-search-ads-specialist",
+    "url:https://djinni.co/jobs/858997-system-administrator-it-support-specialist"
   ],
   "baselined": [
     "SoftServe",
@@ -4428,7 +4437,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 2,
+    "Ajax Systems": 3,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
