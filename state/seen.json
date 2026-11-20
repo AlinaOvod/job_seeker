@@ -4742,7 +4742,9 @@
     "url:https://jobs.lever.co/ajax/14425fc8-433e-4407-a4a8-b934dbb8a834",
     "url:https://djinni.co/jobs/859225-qa-automation-engineer-middle",
     "url:https://djinni.co/jobs/859224-quality-enablement-engineer",
-    "tg:Job_IT_Junior/10811"
+    "tg:Job_IT_Junior/10811",
+    "url:https://djinni.co/jobs/859226-middle-l2-technical-support-specialist",
+    "url:https://djinni.co/jobs/859227-account-manager"
   ],
   "baselined": [
     "SoftServe",
@@ -4768,7 +4770,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
