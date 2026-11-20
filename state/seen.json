@@ -4599,7 +4599,12 @@
     "url:https://djinni.co/jobs/854272-requirements-and-coordination-manager",
     "url:https://djinni.co/jobs/854252-solution-architect",
     "url:https://djinni.co/jobs/859114-r-and-d-engineer-research-and-development",
-    "url:https://jobs.dou.ua/companies/united-tech/vacancies/380596"
+    "url:https://jobs.dou.ua/companies/united-tech/vacancies/380596",
+    "url:https://djinni.co/jobs/859127-business-development-manager-psp-high-risk",
+    "url:https://djinni.co/jobs/859126-financial-partner",
+    "url:https://djinni.co/jobs/854201-junior-uac-media-buyer",
+    "url:https://djinni.co/jobs/859125-systems-administrator",
+    "url:https://djinni.co/jobs/859124-senior-c-engine-developer-data-oriented-desig"
   ],
   "baselined": [
     "SoftServe",
@@ -4625,7 +4630,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 1,
+    "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
