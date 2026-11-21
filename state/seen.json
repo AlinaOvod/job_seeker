@@ -4763,7 +4763,8 @@
     "url:https://djinni.co/jobs/859237-medical-device-quality-lead",
     "url:https://djinni.co/jobs/859240-roblox-game-designer",
     "url:https://djinni.co/jobs/859243-creative-marketing-manager-brighterly",
-    "url:https://djinni.co/jobs/859242-qa-engineer"
+    "url:https://djinni.co/jobs/859242-qa-engineer",
+    "url:https://djinni.co/jobs/859244-video-editor-for-short-form-social-content-re"
   ],
   "baselined": [
     "SoftServe",
@@ -4786,8 +4787,8 @@
   ],
   "failures": {
     "Djinni": 0,
-    "DOU Front End": 3,
-    "DOU Node.js": 3,
+    "DOU Front End": 0,
+    "DOU Node.js": 0,
     "SoftServe": 1,
     "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
