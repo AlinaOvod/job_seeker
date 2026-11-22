@@ -4801,7 +4801,8 @@
     "tg:Job_IT_Junior/10816",
     "url:https://jobs.dou.ua/companies/go-teh-institutsiji/vacancies/380692",
     "url:https://djinni.co/jobs/859258-head-of-contract-manufacturing",
-    "url:https://djinni.co/jobs/859259-asterisk-voip-engineer"
+    "url:https://djinni.co/jobs/859259-asterisk-voip-engineer",
+    "url:https://djinni.co/jobs/804985-customer-support-manager-menedzher-z-pidtrimk"
   ],
   "baselined": [
     "SoftServe",
@@ -4834,7 +4835,7 @@
     "YouScan": 0,
     "BetterMe": 0,
     "Namecheap": 0,
-    "NIX": 0,
+    "NIX": 1,
     "Wix": 0,
     "GlobalLogic": 0,
     "Boosta": 0,
