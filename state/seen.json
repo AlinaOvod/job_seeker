@@ -5531,7 +5531,12 @@
     "url:https://djinni.co/jobs/859690-level-game-designer-fpv-simuliator-unity",
     "url:https://djinni.co/jobs/859689-ai-engineer-big-data-engineer_fintech",
     "url:https://djinni.co/jobs/859685-system-business-analyst-crm-cdp-bloomreach",
-    "url:https://djinni.co/jobs/859688-cloud-security-engineer-secops-devsecops-aws"
+    "url:https://djinni.co/jobs/859688-cloud-security-engineer-secops-devsecops-aws",
+    "url:https://djinni.co/jobs/859694-media-buyer-fb",
+    "url:https://djinni.co/jobs/859693-associate-engineering-manager-payments",
+    "url:https://djinni.co/jobs/855701-customer-support-agent-us-car-shipping-and-lo",
+    "url:https://djinni.co/jobs/859692-network-engineer",
+    "url:https://djinni.co/jobs/859691-project-manager-demand-collection"
   ],
   "baselined": [
     "SoftServe",
@@ -5557,7 +5562,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 1,
+    "Ajax Systems": 0,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
