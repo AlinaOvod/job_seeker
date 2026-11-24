@@ -5550,7 +5550,14 @@
     "url:https://djinni.co/jobs/726433-react-developer-junior-trainee-",
     "url:https://djinni.co/jobs/859704-data-engineer_tt",
     "url:https://djinni.co/jobs/859703-senior-software-engineer_tt",
-    "url:https://djinni.co/jobs/841948-graphic-programmer-render-developer"
+    "url:https://djinni.co/jobs/841948-graphic-programmer-render-developer",
+    "url:https://djinni.co/jobs/859709-middle-python-ai-engineer-ai-llm",
+    "url:https://djinni.co/jobs/859708-conversion-rate-optimization-cro-specialist",
+    "url:https://djinni.co/jobs/840587-intern-manual-qa-individual-ne-stazhuvannia",
+    "url:https://djinni.co/jobs/859707-2d-artist",
+    "url:https://djinni.co/jobs/859706-data-scientist_tt",
+    "url:https://djinni.co/jobs/859705-head-of-customer-care",
+    "url:https://djinni.co/jobs/859689-ai-engineer-big-data-engineer_fintech_os"
   ],
   "baselined": [
     "SoftServe",
@@ -5576,7 +5583,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
