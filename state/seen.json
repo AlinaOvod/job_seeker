@@ -5745,7 +5745,14 @@
     "url:https://djinni.co/jobs/859722-biznes-sistemnii-analitik-oms",
     "url:https://djinni.co/jobs/855233-system-administrator-infrastructure-engineer",
     "url:https://djinni.co/jobs/859825-senior-mainframe-developer-cobol-cics-db2",
-    "url:https://djinni.co/jobs/857605-ai-native-backend-engineer-node-js-nestjs-pos"
+    "url:https://djinni.co/jobs/857605-ai-native-backend-engineer-node-js-nestjs-pos",
+    "url:https://djinni.co/jobs/859831-account-manager-customer-support",
+    "url:https://djinni.co/jobs/848506-affiliate-team-lead-igaming",
+    "url:https://djinni.co/jobs/859421-videomontazher-video-editor-youtube-ta-reels",
+    "url:https://djinni.co/jobs/859830-lead-mobile-developer-ios-android",
+    "url:https://djinni.co/jobs/859829-software-engineer-c-c",
+    "url:https://djinni.co/jobs/859828-sales-development-representative",
+    "url:https://djinni.co/jobs/859827-ai-motion-designer-middle"
   ],
   "baselined": [
     "SoftServe",
@@ -5780,7 +5787,7 @@
     "Namecheap": 0,
     "NIX": 0,
     "Wix": 0,
-    "GlobalLogic": 0,
+    "GlobalLogic": 1,
     "Boosta": 0,
     "Gen.Tech": 0,
     "Ciklum": 0
