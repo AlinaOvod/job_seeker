@@ -6111,7 +6111,13 @@
     "url:https://djinni.co/jobs/860023-middle-senior-manual-qa-engineer-with-ai-skil",
     "url:https://djinni.co/jobs/860022-java-backend-developer-middle",
     "url:https://djinni.co/jobs/858998-senior-flutter-developer",
-    "url:https://djinni.co/jobs/860020-hr-specialist-retention-ld-and-events"
+    "url:https://djinni.co/jobs/860020-hr-specialist-retention-ld-and-events",
+    "url:https://djinni.co/jobs/854637-b2b-sales-manager-fintech",
+    "url:https://djinni.co/jobs/860021-senior-bdm-sales-manager",
+    "url:https://djinni.co/jobs/860025-head-of-influencer-marketing-igaming",
+    "url:https://djinni.co/jobs/818827-devops",
+    "url:https://djinni.co/jobs/846477-project-manager-lishe-dlia-viis-kovikh-ta-vet",
+    "url:https://djinni.co/jobs/860018-marketing-manager-b2b-pr-and-social"
   ],
   "baselined": [
     "SoftServe",
@@ -6137,7 +6143,7 @@
     "DOU Front End": 0,
     "DOU Node.js": 0,
     "SoftServe": 1,
-    "Ajax Systems": 0,
+    "Ajax Systems": 1,
     "TG: Don't Panic Junior IT Jobs": 0,
     "uni.tech": 0,
     "Upstars": 0,
@@ -6146,7 +6152,7 @@
     "Namecheap": 0,
     "NIX": 0,
     "Wix": 0,
-    "GlobalLogic": 1,
+    "GlobalLogic": 0,
     "Boosta": 0,
     "Gen.Tech": 0,
     "Ciklum": 0
