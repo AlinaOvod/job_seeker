@@ -6258,7 +6258,10 @@
     "url:https://djinni.co/jobs/860117-seo-specialist",
     "url:https://djinni.co/jobs/860116-manual-qa-engineer-web-mobile",
     "url:https://djinni.co/jobs/860115-intern-qa-engineer-game",
-    "url:https://djinni.co/jobs/860114-uav-engineer"
+    "url:https://djinni.co/jobs/860114-uav-engineer",
+    "url:https://djinni.co/jobs/840287-computer-vision-engineer",
+    "url:https://djinni.co/jobs/860119-java-tech-lead-with-tcp-ip",
+    "url:https://djinni.co/jobs/860118-devops-tech-lead"
   ],
   "baselined": [
     "SoftServe",
@@ -6293,7 +6296,7 @@
     "Namecheap": 0,
     "NIX": 0,
     "Wix": 0,
-    "GlobalLogic": 0,
+    "GlobalLogic": 1,
     "Boosta": 0,
     "Gen.Tech": 0,
     "Ciklum": 0
